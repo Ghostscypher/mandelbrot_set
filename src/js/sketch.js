@@ -156,6 +156,19 @@ function keyPressed() {
             nextTarget();
         });
     }
+
+    // Add pause functionality
+    if (key == 'p' || key == 'P') {
+        // Check if the loop is running
+        if (isLooping()) {
+            // Pause the loop
+            noLoop();
+            return;
+        }
+
+        // Resume the loop
+        loop();
+    }
 }
 
 function mouseMoved() {

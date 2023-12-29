@@ -3,7 +3,7 @@ precision highp float;
 // #endif
 
 // Constants
-const int MAX_ITERATIONS = 100;
+const int MAX_ITERATIONS = 150;
 
 // Passed in from the vertex shader.
 uniform vec2 u_resolution;
@@ -102,8 +102,11 @@ vec3 mandelbrot(vec2 c) {
         n += 1.0;
     }
 
+    // Smooth coloring
+    float smooth_n = n + 1.0 - log(log(length(z))) / log(2.0);
+
     // Use bernstein polynomials for smooth coloring
-    float t = map(n, 0.0, float(MAX_ITERATIONS), 0.0, 1.0);
+    float t = map(smooth_n, 0.0, float(MAX_ITERATIONS), 0.0, 1.0);
 
     color.r = 9.0 * (1.0 - t) * t * t * 255.0;
     color.g = 15.0 * (1.0 - t) * (1.0 - t) * t * t * 255.0;

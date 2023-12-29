@@ -43,21 +43,15 @@ for each pixel (Px, Py) on the screen do
         y := 2×x×y + y0
         x := xtemp
         iteration := iteration + 1
- 
+
     color := palette[iteration]
     plot(Px, Py, color)
 ```
 
-## Future Work
+## Usage
 
-I plan to add the following features to this project:
-For now I need to first figure out a way to optimize the generation of the Mandelbrot set. I am thinking of using a shader to do this. Either openGL or WebGL. I will. Another thing to consider is getting repeated patterns and using cached versions of the patterns to speed up the generation process. This should hopefully speed up the generation process, and allow a somewhat infinite zoom emulation. Note it's not actually infinite, but it's good enough for most purposes. This is because we quickly reach the limits of the floating point precision of the computer.
-
-- [ ] Add zoom functionality
-- [ ] Add color palette selection
-- [ ] Add color palette generation
-- [ ] Add color palette animation
-
+The simulation is not very interactive.
+1. To iterate through a set of julia sets, press the `n` key. This will iterate through a set of julia sets and display them on the screen.
 
 ## Demo
 

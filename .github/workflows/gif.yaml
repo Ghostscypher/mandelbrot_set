@@ -73,6 +73,9 @@ jobs:
           # The time between frames
           time_per_frame: 100
 
+          # Delay before starting to capture frames
+          start_delay: 10000
+
       # Push the output branch
       - name: Push the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

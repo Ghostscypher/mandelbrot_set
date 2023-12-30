@@ -61,7 +61,7 @@ The simulation is not very interactive.
 
 ### Julia Set
 
-![Julia Set](./screenshots/julia_sets.gif)
+![Julia Set](./screenshots/julia_set.gif)
 
 ## References
 

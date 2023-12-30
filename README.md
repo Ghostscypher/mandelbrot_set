@@ -55,7 +55,13 @@ The simulation is not very interactive.
 
 ## Demo
 
-<img src="https://raw.githubusercontent.com/ghostscypher/mandelbrot_set/output/demo.gif" alt="Mandelbrot Set">
+### Mandelbrot Set
+
+![Mandelbrot Set](./screenshots/mandelbrot_set.png)
+
+### Julia Set
+
+![Julia Set](./screenshots/julia_sets.gif)
 
 ## References
 

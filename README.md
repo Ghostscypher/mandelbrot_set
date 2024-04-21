@@ -6,7 +6,7 @@ The Mandelbrot set is the set of complex numbers `c` for which the function `f(z
 
 ## Installation
 
-To run the simulation, simply clone the repository and open the `index.html` file in your browser. Alternatively, you can visit the [GitHub Pages](https://ghostscypher.github.io/madelbrot_set/src/index.html) for this repository.
+To run the simulation, simply clone the repository and open the `index.html` file in your browser. Alternatively, you can visit the [GitHub Pages](https://ghostscypher.github.io/mandelbrot_set/src/index.html) for this repository.
 
 ## Implementation
 
